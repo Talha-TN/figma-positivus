@@ -1,5 +1,13 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 const FooterContact = () => {
+  const[inputValue,setInputValue]=useState("")
+  const inputRef = useRef()
+  const handleInput=()=>{
+    setInputValue(inputRef.current.value)
+    inputRef.current.value=""
+  }
+  console.log(inputValue)
+  
   return (
     <div className='py-3 flex gap-16 items-center border-b-[1px] w-[900px] m-auto'>
       <div className="flex flex-col gap-3">
@@ -9,8 +17,8 @@ const FooterContact = () => {
          <p className='text-[13px] font-serif '>Address: 1234 Main st Abbottabad KPK, Pakistan</p>
       </div>
       <div className="subscribe flex gap-5 p-14 bg-gray-900 rounded-lg">
-        <input type="email" placeholder='email' className='text-black p-1 rounded-lg border-[1px] border-black pl-3 cursor-pointer'/>
-        <button className='bg-lime-400 text-black px-6 rounded-lg'>Subscribe to news</button>
+        <input ref={inputRef} type="email" placeholder='email' className='text-black p-1 rounded-lg border-[1px] border-black pl-3 cursor-pointer'/>
+        <button onClick={handleInput} className='bg-lime-400 text-black px-6 rounded-lg'>Subscribe to news</button>
       </div>
     </div>
   )

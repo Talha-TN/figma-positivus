@@ -13,7 +13,7 @@ const Consultaion = () => {
       <div className="max-w-screen-lg m-auto mt-8 ">
         {state.map((val) => {
           return (
-            <ConsultationDataList val={val} handleDelete={handleDelete}/>
+            <ConsultationDataList key={val.id} val={val} handleDelete={handleDelete}/>
           );
         })}
       </div>
