@@ -4,6 +4,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import image from "../assets/vector.png"
 const FooterHeader = () => {
+    const listyle = 'cursor-pointer text-sm font-serif hover:text-lime-400'
+    const buttonstyle ='hover:text-lime-400'
   return (
     <div className='flex justify-between py-3 w-[900px] m-auto'>
         <div className="logo flex gap-2 ">
@@ -12,17 +14,17 @@ const FooterHeader = () => {
         </div>
        
             <ul className='flex gap-4 '>
-                <li className='cursor-pointer text-sm font-serif hover:text-lime-400'>About us</li>
-                <li className='cursor-pointer text-sm font-serif hover:text-lime-400'>Services</li>
-                <li className='cursor-pointer text-sm font-serif hover:text-lime-400'>Use Cases</li>
-                <li className='cursor-pointer text-sm font-serif hover:text-lime-400'>Pricing</li>
-                <li className='cursor-pointer text-sm font-serif hover:text-lime-400'>Blog</li>
+                <li className={listyle}>About us</li>
+                <li className={listyle}>Services</li>
+                <li className={listyle}>Use Cases</li>
+                <li className={listyle}>Pricing</li>
+                <li className={listyle}>Blog</li>
             </ul>
         
         <div className="flex gap-3">
-            <button ><FaLinkedin className='hover:text-lime-400'/></button>
-            <button ><FaFacebook className='hover:text-lime-400' /></button>
-            <button ><FaTwitter  className='hover:text-lime-400'/></button>
+            <button ><FaLinkedin className={buttonstyle}/></button>
+            <button ><FaFacebook className={buttonstyle}/></button>
+            <button ><FaTwitter  className={buttonstyle}/></button>
         </div>
     </div>
   )

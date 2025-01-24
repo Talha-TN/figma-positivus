@@ -11,7 +11,7 @@ const FooterContact = () => {
   return (
     <div className='py-3 flex gap-16 items-center border-b-[1px] w-[900px] m-auto'>
       <div className="flex flex-col gap-3">
-         <h1 className='text-[13px] font-serif bg-lime-400 text-black rounded-md w-20 text-center font-medium'>Contact us:</h1>
+         <h1 className='text-[13px] font-serif bg-lime-400 text-black rounded-md w-20 text-center font-medium py-2 px-1'>Contact us:</h1>
          <p className='text-[13px] font-serif '>Email: nawazt964@gmail.com</p>
          <p className='text-[13px] font-serif '>phone: 03239825457</p>
          <p className='text-[13px] font-serif '>Address: 1234 Main st Abbottabad KPK, Pakistan</p>
