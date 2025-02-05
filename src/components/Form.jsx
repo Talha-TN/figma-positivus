@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useRef } from "react";
-
 const Form = () => {
   const [data, setdata] = useState({});
   const hiRef = useRef();
